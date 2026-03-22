@@ -41,22 +41,25 @@ This creates `~/.arules/rules.md` with 6 starter categories. Add it to your AI's
 
 ```
 aman
-├── acore     →  identity    (who it IS)
-├── amem      →  memory      (what it KNOWS)
-├── akit      →  tools       (what it CAN DO)
-├── aflow     →  workflows   (HOW it works)
-└── arules    →  guardrails  (what it MUST/MUST NOT do)
+├── acore   →  identity     →  who your AI IS
+├── amem    →  memory       →  what your AI KNOWS
+├── akit    →  tools        →  what your AI CAN DO
+├── aflow   →  workflows    →  HOW your AI works
+├── arules  →  guardrails   →  what your AI WON'T do
+└── aeval   →  evaluation   →  how GOOD your AI is
 ```
 
 | Layer | Package | What it does |
 |:------|:--------|:-------------|
 | Identity | [acore](https://github.com/amanasmuei/acore) | Personality, values, relationship memory |
-| Memory | [amem](https://github.com/amanasmuei/amem) | Automated knowledge storage |
-| Tools | [akit](https://github.com/amanasmuei/akit) | Portable AI capabilities |
-| Workflows | [aflow](https://github.com/amanasmuei/aflow) | Multi-step AI workflows |
-| Guardrails | **arules** | Safety rules and permissions |
+| Memory | [amem](https://github.com/amanasmuei/amem) | Automated knowledge storage (MCP) |
+| Tools | [akit](https://github.com/amanasmuei/akit) | 15 portable AI tools (MCP + manual fallback) |
+| Workflows | [aflow](https://github.com/amanasmuei/aflow) | Reusable AI workflows (code review, bug fix, etc.) |
+| Guardrails | **arules** | Safety boundaries and permissions |
+| Evaluation | [aeval](https://github.com/amanasmuei/aeval) | Relationship tracking and session logging |
+| **Unified** | **[aman](https://github.com/amanasmuei/aman)** | **One command to set up everything** |
 
-Each works independently. Together they're a complete portable AI agent.
+Each works independently. `aman` is the front door.
 
 ---
 
